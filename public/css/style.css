@@ -1,0 +1,42 @@
+body{
+
+	background-color:#F9EDF2;
+}
+
+.caption{
+
+	height:  152px ;
+
+	background-color:#F4F3F3;
+} 
+
+#ni
+{
+	
+	color: red;
+	font-family: 'Kaushan Script', cursive;
+	margin-left: 15px;
+}
+
+h1,h2,h3
+{
+   font-family: 'Kaushan Script', cursive;
+}
+
+#login
+{
+	float:right;
+}
+
+.logo
+{
+
+	background: transparent;
+	margin-top: 5px;
+}
+
+.btn-black{
+    background-color: #000 !important;
+    color: #fff;
+}
+
