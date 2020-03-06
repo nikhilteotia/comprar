@@ -36,13 +36,17 @@
 
                 <div class="row">
 
+
                   <!-- product.php -->
 
-                  <?php include(TEMPLATE_FRONT .DS. "product.php")   ?>
-                   
+                  <?php include(TEMPLATE_FRONT .DS. "product.php" );  ?>
 
-                   
-                </div>
+                  <!-- coming from cart -->
+
+                  <h2><?php//  echo $_SESSION['product_1'];   ?> 
+
+
+                 </div>
 
             </div>
 

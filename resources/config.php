@@ -3,6 +3,9 @@
 ob_start();
 
 session_start();
+// session_destroy();
+
+
 
  // path configuration
 
@@ -31,5 +34,7 @@ session_start();
 
    
     require_once("function.php");
+     require_once("cart.php");
+      
 
   ?>
