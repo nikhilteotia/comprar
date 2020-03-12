@@ -1,5 +1,3 @@
-<?php require_once("../resources/config.php") ?>
-
 <?php
 
 
@@ -242,6 +240,7 @@ if (isset($_POST['submit']))
 
    else
    {
+     $_SESSION['username'] = $username;
       redirect("admin");
 
    }

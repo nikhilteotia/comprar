@@ -1,4 +1,4 @@
-<?php require_once("../resources/config.php"); ?>
+<?php require_once("cart.php"); ?>
 
 <!DOCTYPE html>
 <html lang="en">
