@@ -11,8 +11,8 @@
               
                   <a  class="navbar-brand" href="index.php"><span class="glyphicon glyphicon-home"></span>  COMPRAR</a>
                
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
+            </div>  
+            <!--  Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li>
@@ -20,9 +20,6 @@
 
                     </li>
                     
-                    <li>
-                        <a href="admin">Admin</a>
-                    </li>
                      <li>
                         <a href="checkout.php">Checkout</a>
                     </li>
@@ -31,7 +28,7 @@
                     </li>
 
                     <li>
-                        <a href="contact.php">about us</a>
+                        <a href="about.php">about us</a>
                     </li>
 
                 </ul>

@@ -22,7 +22,7 @@ body {
 }
 
 .caption {
-    height: 130px;
+    height: 20px;
     overflow: hidden;
 }
 
@@ -31,7 +31,8 @@ body {
 }
 
 .thumbnail img {
-    width: 100%;
+    width: 350px;
+    height: 200px; 
 }
 
 .ratings {

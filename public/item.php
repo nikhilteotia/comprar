@@ -1,4 +1,5 @@
 <?php require_once("../resources/config.php") ?>
+<?php require_once("cart.php") ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -60,3 +61,6 @@ $query = query("SELECT * FROM product WHERE product_id = " .escape_string($_GET[
 </body>
 
 </html>
+
+
+

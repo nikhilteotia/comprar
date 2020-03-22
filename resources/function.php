@@ -87,22 +87,30 @@ function get_product()
   while ($row = fetch_array($query)) 
   {  //can use for insert html tags in bulk 
   	 $product = <<<DETERMINER
+<div class="col-sm-3 col-lg-3 col-md-3">
+                        <div class="thumbnail">
 
- <div class="col-sm-4 col-lg-4 col-md-4">
-    <div class="thumbnail">
-       <a href="item.php?id={$row['product_id']}"> <img src="{$row['product_image']}" alt=""></a>
-           
-           <div class="caption">
-               <h4 class="pull-right">&#8377;{$row['product_price']}</h4>
-                <a href='item.php?id={$row['product_id']}'>{$row['product_title']}</a>
-                  </h4>
-             
-              <p>See more snippets like this online store item at <a target="_blank" href="http://www.bootsnipp.com">Bootsnipp - http://bootsnipp.com</a>.</p>
+                            <img src="{$row['product_image']}">
 
-              <a class="btn btn-primary" target="_blank" href="cart.php?add={$row['product_id']}">ADD TO CART</a>
-         </div>
-   </div>
- </div>
+                            <div class="caption">
+
+                                <h4 class="pull-right">&#8377;{$row['product_price']}</h4>
+
+                                 <a href='item.php?id={$row['product_id']}'>{$row['product_title']}</a>
+                                
+                                 <p class="text-left">{$row['product_description']} </p>
+
+                                 <a class="btn btn-primary" target="_blank" href="cart.php?add={$row['product_id']}">ADD TO CART</a>
+                             <a href="item.php?id={$row['product_id']}" class="btn btn-default">More Info</a>
+
+
+
+                            </div>
+                            
+                        </div>
+                    </div>
+
+ 
 DETERMINER;
 
 echo $product;
@@ -133,7 +141,7 @@ function get_categories()
   { 
   	 $category = <<<DETERMINER
 
-      <a href='category.php?id={$row['cat_id']}' class='list-group-item'>{$row['cat_title']}</a>
+      <a href='category.php?id={$row['cat_id']}' class='list-group-item' style='height:54px;'>{$row['cat_title']}</a>
  
 
 DETERMINER;
@@ -158,18 +166,28 @@ function get_product_in_cat_page()
   {  //can use for insert html tags in bulk 
      $product = <<<DETERMINER
 
- <div class="col-md-3 col-sm-6 hero-feature">
-                <div class="thumbnail">
-                    <a href="item.php?id={$row['product_id']}"> <img src="{$row['product_image']}" alt=""></a>
-                    <div class="caption">
-                        <h3><a href='item.php?id={$row['product_id']}'>{$row['product_title']}</a></h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                        <p>
-                            <a href="#" class="btn btn-primary">Buy Now!</a>
-                            <a href="item.php?id={$row['product_id']}" class="btn btn-default">More Info</a>
-                        </p>
+ <div class="col-sm-3 col-lg-3 col-md-3">
+                        <div class="thumbnail">
+
+                            <img src="{$row['product_image']}">
+
+                            <div class="caption">
+
+                                <h4 class="pull-right">&#8377;{$row['product_price']}</h4>
+
+                                 <a href='item.php?id={$row['product_id']}'>{$row['product_title']}</a>
+                                
+                                 <p class="text-left">{$row['product_description']} </p>
+
+                                 <a class="btn btn-primary" target="_blank" href="cart.php?add={$row['product_id']}">ADD TO CART</a>
+                             <a href="item.php?id={$row['product_id']}" class="btn btn-default">More Info</a>
+
+
+
+                            </div>
+                            
+                        </div>
                     </div>
-                </div>
 DETERMINER;
 
 echo $product;
@@ -190,19 +208,28 @@ function get_product_in_shop_page()
   {  //can use for insert html tags in bulk 
      $product = <<<DETERMINER
 
- <div class="col-md-3 col-sm-6 hero-feature">
-                <div class="thumbnail">
-                    <img src="{$row['product_image']}" alt="">
-                    <div class="caption">
-                        <h3>{$row['product_title']}</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                        <p>
-                            <a href="#" class="btn btn-primary">Buy Now!</a>
+ <div class="col-sm-3 col-lg-3 col-md-3">
+                        <div class="thumbnail">
+
+                            <img src="{$row['product_image']}">
+
+                            <div class="caption">
+
+                                <h4 class="pull-right">&#8377;{$row['product_price']}</h4>
+
+                                 <a href='item.php?id={$row['product_id']}'>{$row['product_title']}</a>
+                                
+                                 <p class="text-left">{$row['product_description']} </p>
+
+                                 <a class="btn btn-primary" target="_blank" href="cart.php?add={$row['product_id']}">ADD TO CART</a>
                              <a href="item.php?id={$row['product_id']}" class="btn btn-default">More Info</a>
-                        </p>
+
+
+
+                            </div>
+                            
+                        </div>
                     </div>
-                    </div>
-                </div>
 DETERMINER;
 
 echo $product;
@@ -241,7 +268,7 @@ if (isset($_POST['submit']))
    else
    {
      $_SESSION['username'] = $username;
-      redirect("admin");
+      redirect("index.php");
 
    }
 
@@ -283,7 +310,7 @@ function send_message()
     if (!$result) 
     {
       
-       set_message("soory! we could not sent your message");
+       set_message("soory! we could not sent your message(mail server is not present)");
        redirect("contact.php");
     }
 

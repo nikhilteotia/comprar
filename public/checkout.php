@@ -83,7 +83,16 @@
 
 </table>
 
+
 </div><!-- CART TOTALS-->
+
+
+<div>
+  
+  <a href="payment.php"><button type="submit" class="btn btn-black" name="submit">Payment</button></a>
+
+
+</div>
 
 
  </div><!--Main Content-->

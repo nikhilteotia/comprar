@@ -34,25 +34,26 @@
 
               <?php include(TEMPLATE_FRONT .DS. "carousel.php")   ?>
 
-                <div class="row">
-
-
-                  <!-- product.php -->
-
-                  <?php include(TEMPLATE_FRONT .DS. "product.php" );  ?>
-
-                  <!-- coming from cart -->
-
-                  <h2><?php//  echo $_SESSION['product_1'];   ?> 
-
-
-                 </div>
-
             </div>
 
-        </div>
 
-    </div>
+
+        </div>
+   
+     </div>
+
+
+     <div class="container">
+       
+       
+       <div class="row">
+         
+           <?php include(TEMPLATE_FRONT .DS. "product.php" );  ?>
+
+       </div>
+ 
+
+     </div>
     
 
    <!-- footer.php -->

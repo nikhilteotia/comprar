@@ -3,9 +3,11 @@ body{
 	background-color:#F9EDF2;
 }
 
+
+
 .caption{
 
-	height:  152px ;
+	height:180px;
 
 	background-color:#F4F3F3;
 } 
@@ -39,4 +41,43 @@ h1,h2,h3
     background-color: #000 !important;
     color: #fff;
 }
+
+
+
+.exp{
+
+
+	margin-left: 2px;
+	margin-right:2px;
+}
+
+
+#port
+{
+
+	margin-top: 60px;
+}
+
+#port1
+{
+	color: #654321;
+	font-family: 'Kaushan Script', cursive;
+	margin-left: 15px;
+	text-align: center;
+	background: #ffebcd ;
+}
+
+#portbody
+{
+   background-color: #71B8EE;
+
+}
+
+
+
+
+
+
+
+
 
