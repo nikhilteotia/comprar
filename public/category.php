@@ -22,8 +22,8 @@
 
         <!-- Jumbotron Header -->
         <header class="jumbotron hero-spacer">
-            <h1>A Warm Welcome!</h1>
-            <p>The One-stop Shopping Destination E-commerce is revolutionizing the way we all shop. Why do you want to hop from one store to another in search of the latest products when you can find it on the Internet in a single click?</p>
+             <?php get_catname_in_cat_page(); ?>
+            <p>The One-stop Shopping Destination "COMPRAR" E-commerce is revolutionizing the way we all shop. Why do you want to hop from one store to another in search of the latest products when you can find it on the Internet in a single click?</p>
         
         </header>
 

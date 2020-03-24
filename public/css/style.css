@@ -7,7 +7,7 @@ body{
 
 .caption{
 
-	height:180px;
+	height:160px;
 
 	background-color:#F4F3F3;
 } 
@@ -71,6 +71,13 @@ h1,h2,h3
 {
    background-color: #71B8EE;
 
+}
+
+#pac_mar
+{
+	margin-left: 15px;
+	margin-top: 5PX;
+	margin-bottom: 5PX;
 }
 
 

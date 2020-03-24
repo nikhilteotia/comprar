@@ -6,7 +6,7 @@
 <footer>
     <div class="row">
         <div class="col-lg-12">
-            <p>Copyright &copy; NIKHIL TEOTIA</p>
+            <p>Copyright &copy; </p>
         </div>
     </div>
 </footer>

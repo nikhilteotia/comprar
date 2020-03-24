@@ -100,12 +100,14 @@ function get_product()
                                 
                                  <p class="text-left">{$row['product_description']} </p>
 
-                                 <a class="btn btn-primary" target="_blank" href="cart.php?add={$row['product_id']}">ADD TO CART</a>
-                             <a href="item.php?id={$row['product_id']}" class="btn btn-default">More Info</a>
+                                 
 
 
 
                             </div>
+  
+                               <a class="btn btn-primary" id="pac_mar" href="cart.php?add={$row['product_id']}">ADD TO CART</a>
+                                 <a href="item.php?id={$row['product_id']}" class="btn btn-default"  id="pac_mar">More Info</a>
                             
                         </div>
                     </div>
@@ -165,8 +167,7 @@ function get_product_in_cat_page()
   while ($row = fetch_array($query)) 
   {  //can use for insert html tags in bulk 
      $product = <<<DETERMINER
-
- <div class="col-sm-3 col-lg-3 col-md-3">
+<div class="col-sm-3 col-lg-3 col-md-3">
                         <div class="thumbnail">
 
                             <img src="{$row['product_image']}">
@@ -179,12 +180,14 @@ function get_product_in_cat_page()
                                 
                                  <p class="text-left">{$row['product_description']} </p>
 
-                                 <a class="btn btn-primary" target="_blank" href="cart.php?add={$row['product_id']}">ADD TO CART</a>
-                             <a href="item.php?id={$row['product_id']}" class="btn btn-default">More Info</a>
+                                 
 
 
 
                             </div>
+  
+                               <a class="btn btn-primary" id="pac_mar" href="cart.php?add={$row['product_id']}">ADD TO CART</a>
+                                 <a href="item.php?id={$row['product_id']}" class="btn btn-default"  id="pac_mar">More Info</a>
                             
                         </div>
                     </div>
@@ -208,7 +211,7 @@ function get_product_in_shop_page()
   {  //can use for insert html tags in bulk 
      $product = <<<DETERMINER
 
- <div class="col-sm-3 col-lg-3 col-md-3">
+<div class="col-sm-3 col-lg-3 col-md-3">
                         <div class="thumbnail">
 
                             <img src="{$row['product_image']}">
@@ -221,12 +224,14 @@ function get_product_in_shop_page()
                                 
                                  <p class="text-left">{$row['product_description']} </p>
 
-                                 <a class="btn btn-primary" target="_blank" href="cart.php?add={$row['product_id']}">ADD TO CART</a>
-                             <a href="item.php?id={$row['product_id']}" class="btn btn-default">More Info</a>
+                                 
 
 
 
                             </div>
+  
+                               <a class="btn btn-primary" id="pac_mar" href="cart.php?add={$row['product_id']}">ADD TO CART</a>
+                                 <a href="item.php?id={$row['product_id']}" class="btn btn-default"  id="pac_mar">More Info</a>
                             
                         </div>
                     </div>
@@ -345,7 +350,31 @@ function send_message()
 
 
 
-/*************************************BACK END FUNCTIONS****************************/
+/*************************************EXTRA FASHION FUNCTIONS****************************/
+
+
+function get_catname_in_cat_page()
+{
+ 
+    $query = query("SELECT * FROM categories  WHERE cat_id = " .escape_string($_GET['id']). " ");
+    confirm($query);
+
+
+      while ($row = fetch_array($query)) 
+  { 
+     $category = <<<DETERMINER
+
+      <h1>WELCOME TO {$row['cat_title']} SECTION </h1>
+      
+ 
+
+DETERMINER;
+
+echo $category;
+
+}
+
+}
 
 
 
