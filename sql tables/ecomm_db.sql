@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 22, 2020 at 11:43 AM
+-- Generation Time: Aug 21, 2020 at 04:20 PM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.4.1
 
@@ -71,7 +71,9 @@ INSERT INTO `product` (`product_id`, `product_title`, `product_category_id`, `pr
 (1, 'Sports Running Shoes For Men (Black)', 1, 7999.5, 100, 'This is a genuine product of adidas India Marketing Private Ltd. The product comes with a standard brand warranty of 90 days', 'A shoe is an item of footwear intended to protect and comfort the human foot. Shoes are also used as an item of decoration and fashion. The design of shoes has varied enormously through time and from culture to culture, with appearance originally being tied to function. Additionally, fashion has often dictated many design elements, such as whether shoes have very high heels or flat ones. Contemporary footwear in the 2010s varies widely in style, complexity and cost. Basic sandals may consist of only a thin sole and simple strap and be sold for a low cost. High fashion shoes made by famous designers may be made of expensive materials, use complex construction and sell for hundreds or even thousands of dollars a pair', '\\ecomm\\images\\men\\shoe.jpeg'),
 (2, 'Casio Analog Watch for Men\'s  (black)', 1, 6000, 20, 'This is a genuine Casio product. The product comes with a standard manufacturer warranty of 2 Years.\r\n\r\n.', 'Casio Computer Co., Ltd. is a Japanese multinational consumer electronics and commercial electronics manufacturing company headquartered in Shibuya, Tokyo, Japan. Its products include calculators, mobile phones, digital cameras, electronic musical instruments, and analogue and digital watches. It was founded in 1946, and in 1957 introduced the world\'s first entirely electric compact calculator. It was an early digital camera innovator, and during the 1980s and 1990s, the company developed numerous affordable home electronic keyboards for musicians along with introducing the world\'s first mass-produced digital watches.', '\\ecomm\\images\\men\\watch.jpeg'),
 (3, 'mens\'s jean', 1, 500, 200, 'Material: Denim\r\nFit Type: Relaxed\r\nOccasion: Casual\r\nsize: xl\r\ngender: male\r\nThe product comes with a standard brand warranty of 90 days\r\n', '', '\\ecomm\\images\\men\\jeans.jpeg'),
-(4, 'Gas Men\'s Printed Slim fit T-Shirt', 1, 1494, 200, '\r\n    Care Instructions: machine wash\r\n    Fit Type: slim fit\r\n    Color: Cendre Blue\r\n    100% Cotton\r\n    Slim fit\r\n    Half sleeve with round neck\r\n    Machine wash\r\n', 'Gas Jeans, sometimes stylized as GAS, is a leading premium apparel and denim brand owned by Grotto S.p.A, run by the Grotto family out of Italy. The company was founded by, Claudio Grotto, in the early 1970s. ', '\\ecomm\\images\\men\\tshirt.jpeg');
+(4, 'Gas Men\'s Printed Slim fit T-Shirt', 1, 1494, 200, '\r\n    Care Instructions: machine wash\r\n    Fit Type: slim fit\r\n    Color: Cendre Blue\r\n    100% Cotton\r\n    Slim fit\r\n    Half sleeve with round neck\r\n    Machine wash\r\n', 'Gas Jeans, sometimes stylized as GAS, is a leading premium apparel and denim brand owned by Grotto S.p.A, run by the Grotto family out of Italy. The company was founded by, Claudio Grotto, in the early 1970s. ', '\\ecomm\\images\\men\\tshirt.jpeg'),
+(5, 'Walking Shoes, Flyknit Sports (Pink)', 2, 3000, 200, '', '', '\\ecomm\\images\\women\\shoe.jpeg'),
+(6, 'Guess W1159L2 Analog Watch - For Women', 2, 7999, 200, '2 year manufacturer warranty.\r\n30 Day Return Policy.\r\nCash on Delivery available.', '\r\n\r\nLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ', '\\ecomm\\images\\women\\watch.jpeg');
 
 -- --------------------------------------------------------
 
@@ -130,7 +132,7 @@ ALTER TABLE `categories`
 -- AUTO_INCREMENT for table `product`
 --
 ALTER TABLE `product`
-  MODIFY `product_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `product_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `user`

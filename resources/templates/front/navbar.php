@@ -27,15 +27,16 @@
                         <a href="contact.php">Contact</a>
                     </li>
 
-                    <li>
+                    <!-- <li>
                         <a href="about.php">about us</a>
-                    </li>
+                    </li> -->
 
                 </ul>
 
                 <ul class="nav navbar-nav navbar-right">
-                <li><a href="signup.php"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+               
                 <li><a href="login.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                <li><a href=""><span class="glyphicon glyphicon-user"></span><?php echo " ".$_SESSION['username']." ";  ?></a></li>
                 
                 </ul>
             </div>

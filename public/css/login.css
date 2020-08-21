@@ -61,7 +61,8 @@ body {
 
 .login-main-text{
     margin-top: 20%;
-    padding: 60px;
+    padding-top:10%;
+    padding-left: 30%;
     color: #fff;
 }
 
@@ -72,4 +73,9 @@ body {
 .btn-black{
     background-color: #000 !important;
     color: #fff;
+}
+
+.right_1{
+    padding-top:10%;
+    padding-left: 30%;
 }

@@ -25,14 +25,14 @@
 
       <div class="sidenav">
          <div class="login-main-text">
-            <h2>HIGHBEATS<br> Login Page</h2>
-            <p>Login from here to access.</p>
+            <h2>Comprar<br> Login Page</h2>
+            <p>Login from here to access more.</p>
          </div>
       </div>
 
      
-      <header>
-            <h1  class="col-md-12 text-center ">Login</h1>
+      <header class="right_1">
+            <h1  class="col-md-12 text-center "  >Login</h1>
             <h5 class="text-center" id="ni" > <?php display_message(); ?></h5>
 
             <div class="col-sm-4 col-sm-offset-5">         
